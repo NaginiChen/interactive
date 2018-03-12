@@ -1,0 +1,1269 @@
+/*
+CSS DRAWINGS s2018
+* * * * * * * * * * * * * * * * * *
+Full CSS Reset
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.canvas {
+    display: block;
+    position: relative;
+    background-color: rgb(240,240,240);
+    border: solid 20px rgb(245,245,245);
+    box-shadow: 15px 15px 25px rgba(230, 222, 159, 0.78);
+    margin: 60px auto;
+    padding: 20px;
+    width: 900px;
+    height: 600px;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+body{
+    background-color: rgb(255, 248, 224);
+}
+
+/*
+  ========================================
+  Shapes 1
+  ========================================
+*/
+
+.rectangle {
+    position: absolute;
+    top: 89%;
+    left: 42%;
+	width: 210px;
+	height: 65px;
+	background: red;
+}
+
+.oval-left {
+    position: absolute;
+    top: 89%;
+    left: 37%;
+	width: 50px;
+	height: 65px;
+	background: red;
+	border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.oval-right {
+    position: absolute;
+    top: 89%;
+    left: 63%;
+	width: 50px;
+	height: 65px;
+	background: red;
+	border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.triangle-left {
+    position: absolute;
+    top: 82%;
+    left: 37.2%;
+	width: 0;
+	height: 0;
+	border-bottom: 68px solid red;
+	border-left: 40px solid transparent;
+}
+
+.triangle-right {
+    position: absolute;
+    top: 82%;
+    left: 64.2%;
+	width: 0;
+	height: 0;
+	border-bottom: 68px solid red;
+	border-right: 40px solid transparent;
+}
+
+.rectangle-body {
+    position: absolute;
+    top: 22%;
+    left: 41.8%;
+	width: 194px;
+	height: 390px;
+	background: red;
+    border-top-left-radius: 27%;
+    border-top-right-radius: 27%;
+}
+
+.oval-left2 {
+    position: absolute;
+    top: 60%;
+    left: 31.6%;
+	width: 100px;
+	height: 160px;
+	background: rgb(240,240,240);
+	border-top-right-radius: 20%;
+    border-bottom-right-radius: 30%;
+}
+.oval-right2 {
+    position: absolute;
+    top: 60%;
+    left: 63.3%;
+	width: 100px;
+	height: 160px;
+	background: rgb(240,240,240);
+	border-top-left-radius: 20%;
+    border-bottom-left-radius: 30%;
+}
+
+.bottle-neck {
+    position: absolute;
+    top: 17.3%;
+    left: 47.5%;
+	width: 96px;
+	height: 50px;
+	background: red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.bottle-neck2 {
+    position: absolute;
+    top: 19.5%;
+    left: 46.5%;
+	width: 115px;
+	height: 50px;
+	background: red;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.bottle-neck3 {
+    position: absolute;
+    top: 16.2%;
+    left: 49%;
+	width: 69px;
+	height: 50px;
+	background: red;
+    border-top-left-radius: 35%;
+    border-top-right-radius: 35%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.bottle-neck4 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+	width: 51px;
+	height: 80px;
+	background: red;
+}
+
+.label{
+    position: absolute;
+    top: 40%;
+    left: 41.8%;
+	width: 194px;
+	height: 80px;
+	background: white;
+    
+}
+
+.left-eye-1{
+    position: absolute;
+    top: 21%;
+    left: 46%;
+	width: 60px;
+	height: 90px;
+	background: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right-eye-1{
+    position: absolute;
+    top: 21%;
+    left: 53.6%;
+	width: 60px;
+	height: 90px;
+	background: white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.inner-eye-1{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+	width: 53px;
+	height: 63px;
+	background: #2292d3;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.inner-eye-2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+	width: 30px;
+	height: 30px;
+	background: black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.nose{
+    position: absolute;
+    top: 56%;
+    left: 51%;
+	width: 300px;
+	height: 30px;
+	background: tan;
+    border-radius: 40%;
+}
+
+.smile{
+    position: absolute;
+    top: 65%;
+    left: 47%;
+	width: 110px;
+	height: 50px;
+    border: solid 5px;
+    border-color:  transparent #000 transparent #000;
+    border-radius: 0px 0px 100px 100px;
+    
+}
+
+
+/*
+  ========================================
+  Shapes 2
+  ========================================
+*/
+
+.nice-shirt{
+    position: absolute;
+    top: 24%;
+    left: 41%;
+	width: 207px;
+	height: 250px;
+	background: grey;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.nice-shorts{
+    position: absolute;
+    top: 66%;
+    left: 45%;
+	width: 140px;
+	height: 40px;
+	background: black;  
+}
+
+.nice-shorts2{
+    position: absolute;
+    top: 66%;
+    left: 46%;
+	width: 60px;
+	height: 110px;
+	background: black;   
+}
+
+.nice-shorts3{
+    position: absolute;
+    top: 66%;
+    left: 53.5%;
+	width: 60px;
+	height: 110px;
+	background: black; 
+}
+
+.leg1{
+    position: absolute;
+    top: 85.6%;
+    left: 47.5%;
+	width: 35px;
+	height: 80px;
+	background: tan; 
+}
+
+.leg2{
+    position: absolute;
+    top: 85.6%;
+    left: 55%;
+	width: 35px;
+	height: 80px;
+	background: tan; 
+}
+
+.shoe1{
+    position: absolute;
+    top: 97%;
+    left: 45%;
+	width: 57px;
+	height: 20px;
+	background: red;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 70%;
+}
+
+.shoe2{
+    position: absolute;
+    top: 97%;
+    left: 55%;
+	width: 57px;
+	height: 20px;
+	background: red;
+    border-top-right-radius: 70%;
+    border-top-left-radius: 0%;
+}
+
+.bolt1{
+    position: absolute;
+    top: 44.5%;
+    left: 49.5%;
+    width: 35px;
+    height: 50px;
+    background: black;
+    transform: skew(-25deg);   
+}
+
+.bolt2{
+    position: absolute;
+    top: 48.8%;
+    left: 50%;
+    width: 55px;
+    height: 26px;
+    background: black;
+    transform: skew(-25deg);   
+}
+
+.bolt3{
+    position: absolute;
+    top: 53.2%;
+    left: 51%;
+    width: 0px;
+	height: 0;
+	border-top: 40px solid black;
+	border-right: 35px solid transparent; 
+    transform: skew(-15deg);  
+}
+
+.left-arm-oftheforbiddenone{
+    position: absolute;
+    top: 39%;
+    left: 41%;
+	width: 33px;
+	height: 220px;
+	background: tan;    
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+.right-arm-oftheforbiddenone{
+    position: absolute;
+    top: 39%;
+    left: 61.3%;
+	width: 33px;
+	height: 220px;
+	background: tan;    
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+.neck-iscritical{
+    position: absolute;
+    top: 18.5%;
+    left: 49.7%;
+    width: 60px;
+	height: 60px;
+	background: tan;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+	border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;   
+}
+
+.face{
+    position: absolute;
+    top: 6.5%;
+    left: 47.8%;
+    width: 90px;
+	height: 100px;
+	background: tan;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+	border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    
+}
+
+.hat1{
+    position: absolute;
+    top: 5%;
+    left: 47.8%;
+    width: 90px;
+	height: 30px;
+	background: black;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    
+}
+
+.hat2{
+    position: absolute;
+    top: 8%;
+    left: 43%;
+    width: 132px;
+	height: 16px;
+	background: black;
+    border-top-left-radius: 35%;
+    border-bottom-left-radius: 35%;
+    
+}
+
+.left-eye{
+    position: absolute;
+    top: 12.8%;
+    left: 49.5%;
+    width: 17px;
+	height: 17px;
+	background: #82521c;
+    border-radius: 50%;
+    
+}
+
+.right-eye{
+    position: absolute;
+    top: 12.8%;
+    left: 54%;
+    width: 17px;
+	height: 17px;
+	background: #82521c;
+    border-radius: 50%;
+    
+}
+
+.mouth {
+    position: absolute;
+    top: 18.3%;
+    left: 50%;
+    width: 50px;
+    height: 30px;
+    border-radius: 0 0 100px 100px;
+    background: #424B54;
+    overflow: hidden;
+}
+
+.tongue {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 80px;
+    height: 20px;
+    background: pink;
+    border-radius: 40%;
+}
+
+.vape-boi{
+    position: absolute;
+    top: 78%;
+    left: 61%;
+    width: 60px;
+    height: 15px;
+    background: silver;
+    
+}
+
+.vape-boi2{
+    position: absolute;
+    top: 78.5%;
+    left: 67.1%;
+    width: 20px;
+    height: 8px;
+    background: black;
+    
+}
+
+/*
+  ========================================
+  Shapes 3
+  ========================================
+*/
+
+.big-belly{
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    width: 440px;
+    height: 380px;
+    background: white;
+    border-radius: 42%;
+    overflow: hidden;
+}
+
+.left-leg-ofthefatone{
+    position: absolute;
+    top: 87%;
+    left: 16%;
+    width: 180px;
+    height: 60px;
+    background: black;
+    transform: rotate(-10deg);
+    border-radius: 40%;
+        
+}
+
+.right-leg-ofthefatone{
+    position: absolute;
+    top: 86%;
+    left: 65%;
+    width: 180px;
+    height: 60px;
+    background: black;
+    transform: rotate(10deg);
+    border-radius: 40%;
+     
+}
+
+.shirt-leftoval{
+    position: absolute;
+    top: 0%;
+    left: -7%;
+    width: 210px;
+    height: 320px;
+    border-radius: 30%;
+    border-bottom-right-radius: 0%;
+    background: black;
+    
+}
+
+.shirt-rightoval{
+    position: absolute;
+    top: 0%;
+    left: 59%;
+    width: 210px;
+    height: 320px;
+    border-radius: 30%;
+    border-bottom-left-radius: 0%;
+    background: black;
+    
+}
+
+.shirt-bottomsquare{
+    position: absolute;
+    top: 73%;
+    left: 0%;
+    width: 450px;
+    height: 320px;
+    background: black;
+    
+}
+
+.belt-boi{
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    width: 450px;
+    height: 25px;
+    background: #44220e;
+    
+}
+
+.belt-boi2{
+    position: absolute;
+    top: 74%;
+    left: 42%;
+    width: 70px;
+    height: 34px;
+    background: silver;
+    
+}
+
+.dot1{
+    position: absolute;
+    top: 60%;
+    left: 47.5%;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.dot2{
+    position: absolute;
+    top: 46%;
+    left: 47.5%;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.dot3{
+    position: absolute;
+    top: 30%;
+    left: 47.5%;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.tie-boi1{
+    position: absolute;
+    top: 8%;
+    left: 46.5%;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.tie-boi2{
+    position: absolute;
+    top: 7%;
+    left: 49.6%;
+    width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 40px solid black;
+	border-bottom: 20px solid transparent;
+    
+}
+
+.tie-boi3{
+    position: absolute;
+    top: 7%;
+    left: 41%;
+    width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 40px solid black;
+	border-bottom: 20px solid transparent;
+    
+}
+
+.left-arm-ofthefatboi{
+    position: absolute;
+    top: 39%;
+    left: 14%;
+    width: 140px;
+    height: 60px;
+    background: black;
+    transform: rotate(20deg);
+    border-radius: 45%;
+
+}
+
+.right-arm-ofthefatboi{
+    position: absolute;
+    top: 39%;
+    left: 71%;
+    width: 140px;
+    height: 60px;
+    background: black;
+    transform: rotate(-20deg);
+    border-radius: 45%;
+    
+}
+
+.left-bighand{
+    position: absolute;
+    top: 35.5%;
+    left: 11.5%;
+    width: 50px;
+    height: 50px;
+    background: tan;
+    border-radius: 50%;
+    
+}
+
+.right-bighand{
+    position: absolute;
+    top: 35.5%;
+    left: 83%;
+    width: 50px;
+    height: 50px;
+    background: tan;
+    border-radius: 50%;
+    
+}
+
+.left-shoe{
+    position: absolute;
+    top: 85.5%;
+    left: 10%;
+    width: 50px;
+    height: 80px;
+    background: black;
+    transform: rotate(-20deg);
+    border-top-right-radius: 80%;
+    overflow: hidden;
+}
+
+.right-shoe{
+    position: absolute;
+    top: 85%;
+    left: 86.2%;
+    width: 50px;
+    height: 80px;
+    background: black;
+    transform: rotate(20deg);
+    border-top-left-radius: 80%;
+    overflow: hidden;
+    
+}
+
+.left-shoe-oval{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    width: 50px;
+    height: 80px;
+    background: white;
+    transform: rotate(5deg);
+    border-radius: 50%;
+    
+}
+
+.right-shoe-oval{
+    position: absolute;
+    top: 20%;
+    left: -55%;
+    width: 50px;
+    height: 80px;
+    background: white;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    
+}
+
+.neck-fatboi{
+    position: absolute;
+    top: 23%;
+    left: 46%;
+    width: 80px;
+    height: 55px;
+    background: tan;
+    border-radius: 50%;
+    
+}
+
+.big-head{
+    position: absolute;
+    top: 7%;
+    left: 44%;
+    width: 113px;
+    height: 110px;
+    background: tan;
+    border-radius: 35%;
+    
+}
+
+.staff-boi{
+    position: absolute;
+    top: 26%;
+    left: 13%;
+    width: 23px;
+    height: 250px;
+    background: black;
+    transform: rotate(-5deg);
+    
+}
+
+.staff-boi2{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    background: #44220e;
+    border-radius: 50%;
+    transform: rotate(-5deg);
+}
+
+.tophat1{
+    position: absolute;
+    top: 2.5%;
+    left: 42%;
+    width: 110px;
+    height: 50px;
+    background: black;
+    border-radius: 40%;
+    transform: rotate(-20deg);
+    
+}
+
+.tophat2{
+    position: absolute;
+    top: -10.5%;
+    left: 42.5%;
+    width: 68px;
+    height: 100px;
+    background: black;
+    transform: rotate(-20deg);
+    
+}
+
+.left-eye-fatboi{
+    position: absolute;
+    top: 12%;
+    left: 47%;
+    width: 20px;
+    height: 45px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.right-eye-fatboi{
+    position: absolute;
+    top: 12%;
+    left: 52.5%;
+    width: 20px;
+    height: 45px;
+    background: black;
+    border-radius: 50%;
+    
+}
+
+.left-eyebrow{
+    position: absolute;
+    top: 7.5%;
+    left: 48.5%;
+    width: 10px;
+    height: 35px;
+    background: black;
+    transform: rotate(-40deg);
+    
+}
+
+.right-eyebrow{
+    position: absolute;
+    top: 7.5%;
+    left: 52.5%;
+    width: 10px;
+    height: 35px;
+    background: black;
+    transform: rotate(40deg);
+    
+}
+
+.fat-smile{
+    position: absolute;
+    top: 22%;
+    left: 49.5%;
+	width: 30px;
+	height: 15px;
+    border: solid 5px;
+    border-radius: 0px 0px 100px 100px;
+    
+}
+
+.left-bottom-shoe{
+    position: absolute;
+    top: 91.5%;
+    left: 9.5%;
+	width: 20px;
+	height: 40px;
+    background: rgb(240,240,240);
+    border-top-right-radius: 95%;
+    transform: rotate(-19deg);
+    
+}
+
+/*
+  ========================================
+  Shapes 4
+  ========================================
+*/
+
+.skirt {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid black;
+}
+
+.left-leg-lady{
+    position: absolute;
+    top: 94%;
+    left: 48%;
+	width: 6px;
+	height: 35px;
+	background: black;
+    
+}
+
+.right-leg-lady{
+    position: absolute;
+    top: 94%;
+    left: 50%;
+	width: 6px;
+	height: 35px;
+	background: black;
+    
+}
+
+.body-lady{
+    position: absolute;
+    top: 82.5%;
+    left: 48.805%;
+	width: 8px;
+	height: 48px;
+	background: black;
+    
+}
+
+.left-arm-lady{
+    position: absolute;
+    top: 83%;
+    left: 47%;
+	width: 6px;
+	height: 52px;
+	background: black;
+    transform: rotate(40deg);
+      
+}
+
+.right-arm-lady{
+    position: absolute;
+    top: 83%;
+    left: 51%;
+	width: 6px;
+	height: 52px;
+	background: black;
+    transform: rotate(-40deg);
+    
+}
+
+.big-head-lady{
+    position: absolute;
+    top: 46.9%;
+    left: 38%;
+	width: 200px;
+	height: 200px;
+    border: 6px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.censored{
+    position: absolute;
+    top: 32%;
+    left: -18%;
+	width: 250px;
+	height: 35px;
+    background: red;
+    transform: rotate(-8deg);
+    
+}
+
+.mouth-lady{
+    position: absolute;
+    top: 82%;
+    left: 38.5%;
+	width: 40px;
+	height: 4px;
+    background: black;
+    
+}
+
+.nose-lady{
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 15px solid black;
+    
+}
+
+.mole{
+    position: absolute;
+    top: 87%;
+    left: 72%;
+	width: 7px;
+	height: 7px;
+    border-radius: 50%;
+    background: #44220e;
+    
+}
+
+.hair-lady1{
+    position: absolute;
+    top: -30%;
+    left: -20%;
+	width: 200px;
+	height: 100px;
+    background: yellow;
+    border-radius: 50%;
+    
+}
+
+.hair-lady2{
+    position: absolute;
+    top: 46.8%;
+    left: 38%;
+	width: 200px;
+	height: 230px;
+    border: 6px solid yellow;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    overflow: hidden;
+    
+}
+
+.left-ear-lady{
+    position: absolute;
+    top: -2%;
+    left: 1.7%;
+	width: 300px;
+	height: 430px;
+    background: tan;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 90%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 20%;
+    transform: rotate(-5deg);
+    
+    
+}
+
+.right-ear-lady{
+    position: absolute;
+    top: -2%;
+    left: 62.6%;
+	width: 300px;
+	height: 430px;
+    background: tan;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 90%;
+    transform: rotate(5deg);
+    
+}
+
+.left-ear-curve1{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+	width: 250px;
+	height: 410px;
+    border: solid 9px #000;
+    border-color: #000 transparent transparent #000;
+    border-radius: 50% 50% 0 50%;
+    transform: skew(10deg)
+    
+}
+
+.right-ear-curve1{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+	width: 250px;
+	height: 410px;
+    border: solid 9px #000;
+    border-color: #000 #000 transparent transparent;
+    border-radius: 50% 50% 50% 0;
+    transform: skew(-10deg)
+    
+}
+
+.left-ear-curve2{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+	width: 300px;
+	height: 250px;
+    border: solid 9px #000;
+    border-color: transparent transparent transparent #000;
+    border-radius: 50% 0 0 50%;
+    
+}
+
+.right-ear-curve2{
+    position: absolute;
+    top: 25%;
+    left: -40%;
+	width: 300px;
+	height: 250px;
+    border: solid 9px #000;
+    border-color: transparent #000 transparent transparent;
+    border-radius: 0 50% 50% 0;
+    
+}
+
+.wing1{
+    position: absolute;
+    top: 5%;
+    left: -2%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color: #000 transparent  #000 #000;
+    border-radius:  50% 0 0 50% ;
+    transform: skewY(20deg);
+    
+}
+
+.wing2{
+    position: absolute;
+    top: 20%;
+    left: -2%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color: #000 transparent  #000 #000;
+    border-radius:  50% 0 0 50% ;
+    transform: skewY(20deg);
+    
+}
+
+.wing3{
+    position: absolute;
+    top: 35%;
+    left: -2%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color: #000 transparent  #000 #000;
+    border-radius:  50% 0 0 50% ;
+    transform: skewY(20deg);
+    
+}
+
+.wing4{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color:  #000  #000 #000 transparent;
+    border-radius:  0 50% 50% 0;
+    transform: skewY(-20deg);
+    
+}
+
+.wing5{
+    position: absolute;
+    top: 20%;
+    left: 90%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color:  #000  #000 #000 transparent;
+    border-radius:  0 50% 50% 0;
+    transform: skewY(-20deg);
+    
+}
+
+.wing6{
+    position: absolute;
+    top: 36%;
+    left: 90%;
+	width: 100px;
+	height: 100px;
+    border: solid 9px #000;
+    border-color:  #000  #000 #000 transparent;
+    border-radius:  0 50% 50% 0;
+    transform: skewY(-20deg);
+    
+}
+
