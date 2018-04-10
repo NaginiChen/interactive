@@ -5,41 +5,64 @@
         <link rel="stylesheet" >
         <title> index </title> 
     </head>
-    
+
     <!-- True type or open type only for @font-face-->
     <style>
-    
+
         @font-face {  
             font-family: Challenge;
             src: url("assets/Fonts/Challenge Bold Std Regular.otf"); 
         }
-        
-        flex{
-            
-            
+
+        section{
+            width: 30%; height: 100%; background: purple; display: inline-block; margin: 1%;
         }
-    
-    
+
+        @media all and (max-width: 800px) {
+                section{
+                    display: block;
+                    height: 10%;
+                }
+            }
+        
     </style>
-    
+
     <body> 
+
+        <div style="width: 100vw; height: 100vh; background: pink;">
+
+            <section>
+                
+            </section>
+
+            <section >
+
+            </section>
+
+            <section>
+
+            </section>
+
+        </div>
         
-        <!--
-        <p style="font-family: challenge; font-size: 230px"> FREE T-SHIRTS !!!</p>
-        -->
         
-        <div style="flex: "> </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+        <script>  
+            $(function(){
+                // Create debug element
+                $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
+
+                // Set contents on resizing window
+                $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+
+                // Trigger resize event
+                $(window).resize();
+            });
+        </script>
+
+
+
+
     </body>
-    
+
 </html>

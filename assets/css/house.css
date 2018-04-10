@@ -1,0 +1,151 @@
+/*
+CSS DRAWINGS s2018
+* * * * * * * * * * * * * * * * * *
+Full CSS Reset
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+========================================
+Box model reset
+========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+========================================
+General
+========================================
+*/
+
+.canvas{
+    width: 100%;
+    height: 1500px;
+}
+
+div{
+    display: inline-block;
+    position: relative;
+}
+
+br{
+    clear:both; 
+}
+
+.roof{
+    float: left;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 350px solid black;
+}
+
+.chimney{ 
+    float: right;
+    width: 150px;
+    height: 170px;
+    background: red;
+}
+
+.clip-chimney{
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 31%, 0 31%);
+}
+
+.moveChimney{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+
+.door{
+    float: left;
+    width: 100px;
+    height: 200px;
+    background: green;
+}
+
+.clip-door{
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 78% 0, 75% 61%, 86% 61%, 86% 51%, 74% 51%);
+}
+
+.house{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: purple;
+}
+
+.window{
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: orange;
+}
+
+.clip-window{
+    clip-path: polygon(10% 0, 40% 0, 40% 10%, 10% 10%, 10% 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 90% 40%, 90% 10%,
+    60% 10%, 60% 0%, 90% 0, 90% 90%, 90% 60%, 60% 60%, 60% 90%, 90% 90%, 40% 90%, 40% 60%, 10% 60%, 10% 90%, 
+    90% 90%, 90% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+
+
+
+
+
+
+
