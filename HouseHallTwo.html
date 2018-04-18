@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+    <head> 
+        <title> House Hallway Two </title>
+        <link rel="stylesheet" href="assets/css/house.css">
+    </head>
+
+    <body>
+        
+        <div class="hallway flex">
+            <div class="block" style="background: #F7C20E"> </div>
+            <div class="block" style="background: #FC3232"> </div>
+        </div>
+        
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+        <script>  
+            $(function(){
+                // Create debug element
+                $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
+
+                // Set contents on resizing window
+                $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+
+                // Trigger resize event
+                $(window).resize();
+            });
+        </script>
+        
+    </body>
+    
+</html>

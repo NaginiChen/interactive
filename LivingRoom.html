@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+    <head> 
+        <title> Living Room </title>
+        <link rel="stylesheet" href="assets/css/house.css">
+    </head>
+
+    <body>
+
+        <div class="canvas">
+            <div class="TV clip-TV"> </div>
+            <div class="clock clip-clock"> </div>
+            <div class="couch clip-couch"> </div>
+            <div class="table clip-table"> </div>
+            <div class="lamp clip-lamp"> </div>
+
+        </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+        <script>  
+            $(function(){
+                // Create debug element
+                $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
+
+                // Set contents on resizing window
+                $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+
+                // Trigger resize event
+                $(window).resize();
+            });
+        </script>
+
+    </body>
+
+</html>

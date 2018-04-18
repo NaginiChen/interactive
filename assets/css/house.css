@@ -85,6 +85,10 @@ br{
     clear:both; 
 }
 
+section{
+    display: block;
+}
+
 .roof{
     float: left;
     width: 0;
@@ -113,8 +117,8 @@ br{
 
 .door{
     float: left;
-    width: 100px;
-    height: 200px;
+    width: 200px;
+    height: 500px;
     background: green;
 }
 
@@ -124,23 +128,164 @@ br{
 
 .house{
     float: left;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     background: purple;
 }
 
 .window{
     float: left;
-    width: 120px;
-    height: 120px;
+    width: 220px;
+    height: 220px;
     background: orange;
 }
 
 .clip-window{
     clip-path: polygon(10% 0, 40% 0, 40% 10%, 10% 10%, 10% 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 90% 40%, 90% 10%,
-    60% 10%, 60% 0%, 90% 0, 90% 90%, 90% 60%, 60% 60%, 60% 90%, 90% 90%, 40% 90%, 40% 60%, 10% 60%, 10% 90%, 
-    90% 90%, 90% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+        60% 10%, 60% 0%, 90% 0, 90% 90%, 90% 60%, 60% 60%, 60% 90%, 90% 90%, 40% 90%, 40% 60%, 10% 60%, 10% 90%, 
+        90% 90%, 90% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
+
+.hallway{
+    width: 100vw; 
+    height: 100vh;
+    background: pink;
+}
+
+.block{
+    width: 30%; 
+    height: 50%; 
+    margin: 5%;
+}
+
+.flex{
+    display: flex; 
+    justify-content: center;
+}
+
+.TV{
+    float: left;
+    width: 700px;
+    height: 400px;
+    background: black;
+}
+
+.clip-TV{
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 10% 0, 10% 90%, 90% 90%, 90% 10%, 10% 10%, 0 0);
+}
+
+.clock{
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #BEBEBE;
+}
+
+.clip-clock{
+    clip-path: circle(50.2% at 50% 50%);
+}
+
+.couch{
+    float: left;
+    width: 700px;
+    height: 300px;
+    background: #9359FF;
+}
+
+.clip-couch{
+    clip-path: polygon(20% 0, 80% 0, 80% 40%, 100% 40%, 100% 100%, 0 100%, 0 40%, 20% 40%);
+}
+
+.table{
+    float: left;
+    width: 300px;
+    height: 500px;
+    background: #407F7A;
+}
+
+.clip-table{
+    clip-path: polygon(100% 30%, 100% 100%, 80% 100%, 80% 50%, 20% 50%, 20% 100%, 0 100%, 0 30%);
+}
+
+.lamp{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background: yellow;
+}
+
+.clip-lamp{
+    clip-path: polygon(50% 0%, 100% 40%, 50% 40%, 75% 55%, 75% 100%, 25% 100%, 25% 55%, 50% 40%, 0 40%); 
+}
+
+
+.stove{
+    float: left;
+    width: 500px;
+    height: 500px;
+    background: red;
+}
+
+.clip-stove{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%, 10% 50%, 10% 90%, 90% 90%, 90% 50%, 0 50%, 
+        0 20%, 10% 20%, 10% 30%, 20% 30%, 20% 20%, 10% 20%, 
+        33.3% 20%, 33.3% 30%, 43.3% 30%, 43.3% 20%, 33.3% 20%, 
+        56.6% 20%, 56.6% 30%, 66.6% 30%, 66.6% 20%, 56.6% 20%, 
+        80% 20%, 80% 30%, 90% 30%, 90% 20%, 80% 20%, 
+        0 20%);
+}
+
+.kitchenTable{
+    float: left;
+    width: 700px;
+    height: 300px;
+    background: #9A6D40;
+}
+
+.clip-kitchenTable{
+    clip-path: polygon(100% 0, 100% 35%, 65% 35%, 65% 85%, 90% 85%, 90% 100%, 10% 100%, 10% 85%, 35% 85%, 35% 35%, 0% 35%, 0 0);
+}
+
+.fork{
+    float: left;
+    width: 700px;
+    height: 300px;
+    background: #2A4BDF;
+}
+
+.clip-fork{
+    clip-path: polygon(35% 45%, 100% 45%, 100% 55%, 35% 55%, 35% 60%, 0 60%, 0 55%, 25% 55%, 25% 52.5%, 0 52.5%, 0 47.5%,
+    25% 47.5%, 25% 45%, 0 45%, 0 40%, 35% 40%);
+}
+
+.banana{
+    float: left;
+    width: 200px;
+    height: 500px;
+    background: #F8FF0D;
+}
+
+.clip-banana{
+    clip-path: polygon(0 20%, 0 0, 100% 0, 100% 70%, 100% 100%, 0 100%, 0 80%, 50% 80%, 50% 20%);
+}
+
+.mug{
+    float: left;
+    width: 400px;
+    height: 400px;
+    background: #000;
+}
+
+.clip-mug{
+    clip-path: polygon(0 0, 0 100%, 75% 100%, 75% 85%, 100% 85%, 100% 15%, 
+        95% 15%, 95% 15%, 95% 25%, 95% 75%, 80% 75%, 80% 25%, 95% 25%, 95% 15%,
+        75% 15%, 75% 0);
+}
+
+
+
+
+
 
 
 

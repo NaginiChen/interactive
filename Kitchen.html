@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+    <head> 
+        <title> Kitchen </title>
+        <link rel="stylesheet" href="assets/css/house.css">
+    </head>
+
+    <body>
+
+        <div class="canvas">
+            <div class="stove clip-stove"> </div>
+            <div class="kitchenTable clip-kitchenTable"> </div>
+            <div class="fork clip-fork"> </div>
+            <div class="banana clip-banana"> </div>
+            <div class="mug clip-mug"> </div>
+            
+
+        </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+        <script>  
+            $(function(){
+                // Create debug element
+                $("body").append("<div style='position:fixed;top:5px;left:5px;' id='viewportwidth'></div>");
+
+                // Set contents on resizing window
+                $(window).resize(function(){$("#viewportwidth").html($(window).width());});
+
+                // Trigger resize event
+                $(window).resize();
+            });
+        </script>
+
+    </body>
+
+</html>
