@@ -67,13 +67,77 @@ Box model reset
 
 /*
 ========================================
+Color
+========================================
+*/
+
+
+.grad1{
+    -webkit-animation: color1 3s infinite;
+    animation: color1 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes color1{
+    0%   {background: white;}
+    100% {background: #33FFBD;}
+}
+
+.grad2{
+    -webkit-animation: color2 3s infinite;
+    animation: color2 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes color2{
+    0%   {background: white;}
+    100% {background: #3182D3;}
+}
+
+.grad3{
+    -webkit-animation: color3 3s infinite;
+    animation: color3 3s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes color3{
+    0%   {background: white;}
+    100% {background: #D331C9;}
+}
+
+
+
+
+
+/*
+========================================
 General
 ========================================
 */
 
+
+body{
+    background-color: #D1D1D1
+}
+
 .canvas{
     width: 100%;
-    height: 1500px;
+    height: 2200px;
+}
+
+.back{
+    background: #D1D1D1;
+}
+
+.back2{
+    background: #FFE196;
+}
+
+.back3{
+    background: #FFE196;
 }
 
 div{
@@ -81,74 +145,61 @@ div{
     position: relative;
 }
 
-br{
-    clear:both; 
+clear{
+    clear:both;  /* Clears Floats */
 }
 
-section{
-    display: block;
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
 }
 
 .roof{
-    float: left;
-    width: 0;
-    height: 0;
-    border-left: 300px solid transparent;
-    border-right: 300px solid transparent;
-    border-bottom: 350px solid black;
+    width: 40vw;
+    height: 20%;
+    background: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .chimney{ 
-    float: right;
-    width: 150px;
-    height: 170px;
-    background: red;
-}
-
-.clip-chimney{
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 31%, 0 31%);
-}
-
-.moveChimney{
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
-
-
-.door{
-    float: left;
-    width: 200px;
-    height: 500px;
+    width: 40vw;
+    height: 40vh;
     background: green;
-}
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 30%, 0 30%);
 
-.clip-door{
-    clip-path: polygon(78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 78% 0, 75% 61%, 86% 61%, 86% 51%, 74% 51%);
 }
 
 .house{
-    float: left;
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 30vh;
     background: purple;
 }
 
 .window{
-    float: left;
-    width: 220px;
-    height: 220px;
+    width: 20vw;
+    height: 20vh;
     background: orange;
-}
-
-.clip-window{
     clip-path: polygon(10% 0, 40% 0, 40% 10%, 10% 10%, 10% 40%, 40% 40%, 40% 0, 60% 0, 60% 40%, 90% 40%, 90% 10%,
         60% 10%, 60% 0%, 90% 0, 90% 90%, 90% 60%, 60% 60%, 60% 90%, 90% 90%, 40% 90%, 40% 60%, 10% 60%, 10% 90%, 
         90% 90%, 90% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+
 }
 
+.flamingo{
+    width: 20vw;
+    height: 40vh;
+    background: pink;
+    clip-path: polygon(60% 65%, 85% 100%, 80% 100%, 55% 65%, 45% 65%, 20% 100%, 15% 100%, 40% 65%, 35% 65%, 30% 40%, 
+        40% 40%, 40% 0, 20% 0, 20% 20%, 25% 20%, 25% 10%, 35% 10%, 35% 40%, 95% 40%);
+}
+
+
 .hallway{
-    width: 100vw; 
-    height: 100vh;
+    width: 100%; 
+    height: 100%;
     background: pink;
 }
 
@@ -159,74 +210,58 @@ section{
 }
 
 .flex{
+    display: flex;
+}
+
+.flex-center{
     display: flex; 
     justify-content: center;
 }
 
 .TV{
-    float: left;
     width: 700px;
     height: 400px;
     background: black;
-}
-
-.clip-TV{
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 10% 0, 10% 90%, 90% 90%, 90% 10%, 10% 10%, 0 0);
+
 }
 
 .clock{
-    float: left;
     width: 300px;
     height: 300px;
     background: #BEBEBE;
-}
-
-.clip-clock{
     clip-path: circle(50.2% at 50% 50%);
+
 }
 
 .couch{
-    float: left;
     width: 700px;
     height: 300px;
     background: #9359FF;
-}
-
-.clip-couch{
     clip-path: polygon(20% 0, 80% 0, 80% 40%, 100% 40%, 100% 100%, 0 100%, 0 40%, 20% 40%);
+
 }
 
 .table{
-    float: left;
     width: 300px;
     height: 500px;
     background: #407F7A;
-}
-
-.clip-table{
     clip-path: polygon(100% 30%, 100% 100%, 80% 100%, 80% 50%, 20% 50%, 20% 100%, 0 100%, 0 30%);
+
 }
 
 .lamp{
-    float: left;
     width: 500px;
     height: 500px;
     background: yellow;
-}
-
-.clip-lamp{
     clip-path: polygon(50% 0%, 100% 40%, 50% 40%, 75% 55%, 75% 100%, 25% 100%, 25% 55%, 50% 40%, 0 40%); 
-}
 
+}
 
 .stove{
-    float: left;
     width: 500px;
     height: 500px;
     background: red;
-}
-
-.clip-stove{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%, 10% 50%, 10% 90%, 90% 90%, 90% 50%, 0 50%, 
         0 20%, 10% 20%, 10% 30%, 20% 30%, 20% 20%, 10% 20%, 
         33.3% 20%, 33.3% 30%, 43.3% 30%, 43.3% 20%, 33.3% 20%, 
@@ -236,51 +271,254 @@ section{
 }
 
 .kitchenTable{
-    float: left;
     width: 700px;
     height: 300px;
     background: #9A6D40;
-}
-
-.clip-kitchenTable{
     clip-path: polygon(100% 0, 100% 35%, 65% 35%, 65% 85%, 90% 85%, 90% 100%, 10% 100%, 10% 85%, 35% 85%, 35% 35%, 0% 35%, 0 0);
+
 }
 
 .fork{
-    float: left;
     width: 700px;
     height: 300px;
     background: #2A4BDF;
-}
-
-.clip-fork{
     clip-path: polygon(35% 45%, 100% 45%, 100% 55%, 35% 55%, 35% 60%, 0 60%, 0 55%, 25% 55%, 25% 52.5%, 0 52.5%, 0 47.5%,
-    25% 47.5%, 25% 45%, 0 45%, 0 40%, 35% 40%);
+        25% 47.5%, 25% 45%, 0 45%, 0 40%, 35% 40%);
 }
 
 .banana{
-    float: left;
     width: 200px;
     height: 500px;
     background: #F8FF0D;
-}
-
-.clip-banana{
     clip-path: polygon(0 20%, 0 0, 100% 0, 100% 70%, 100% 100%, 0 100%, 0 80%, 50% 80%, 50% 20%);
+
 }
 
 .mug{
-    float: left;
-    width: 400px;
     height: 400px;
     background: #000;
+    clip-path: polygon(0 0, 0 100%, 75% 100%, 75% 85%, 100% 85%, 100% 15%, 95% 15%, 95% 15%, 95% 25%, 
+        95% 75%, 80% 75%, 80% 25%, 95% 25%, 95% 15%, 75% 15%, 75% 0);
 }
 
-.clip-mug{
-    clip-path: polygon(0 0, 0 100%, 75% 100%, 75% 85%, 100% 85%, 100% 15%, 
-        95% 15%, 95% 15%, 95% 25%, 95% 75%, 80% 75%, 80% 25%, 95% 25%, 95% 15%,
-        75% 15%, 75% 0);
+.toilet{
+    width: 400px;
+    height: 400px;
+    background: #D961FF;
+    clip-path: polygon(0 0, 35% 0, 36% 50%, 100% 50%, 80% 78%, 80% 100%, 36% 100%, 36% 77%, 0 50%);
+
 }
+
+.toothbrush{
+    width: 800px;
+    height: 150px;
+    background: #FFAD36;
+    clip-path: polygon(5% 40%, 5% 90%, 6% 90%, 6% 40%, 8% 40%, 8% 90%, 9% 90%, 9% 40%, 11% 40%, 11% 90%,
+        12% 90%, 12% 40%, 14% 40%, 14% 90%, 100% 90%, 100% 100%, 0 100%, 0 40%, 2% 40%, 2% 90%, 3% 90%, 3% 40%);
+}
+
+.toiletPaper{
+    width: 200px;
+    height: 200px;
+    background: #94FF5E;
+    clip-path: polygon(50% 0%, 100% 0, 100% 50%, 50% 50%, 50% 30%, 85% 30%, 85% 20%, 70% 20%, 70% 30%, 70% 20%,
+        70% 30%, 50% 30%, 50% 100%, 47% 100%, 47% 0);
+}
+
+
+.shower{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: #68EDF5;
+    clip-path: polygon(60% 0, 65% 0, 65% 15%, 65% 0, 65% 15%, 75% 15%, 75% 20%, 50% 20%, 50% 15%, 60% 15%, 60% 5%,
+        90% 5%, 90% 70%, 0 70%, 0 100%, 100% 100%, 100% 0, 60% 0, 60% 5%, 65% 5%, 65% 0);
+}
+
+.plunger{
+    width: 400px;
+    height: 500px;
+    background: #F5F368;
+    clip-path: polygon(45% 70%, 45% 0, 55% 0, 55% 70%, 70% 70%, 70% 75%, 80% 75%, 80% 100%, 20% 100%, 20% 75%, 30% 75%, 30% 70%);
+}
+
+.bed{
+    width: 200px;
+    height: 200px;
+    background: #44895A;
+    clip-path: polygon(100% 30%, 100% 70%, 100% 100%, 90% 100%, 90% 85%, 10% 85%, 10% 100%, 0 100%, 0% 70%, 90% 70%, 90% 30%);
+
+}
+
+.teddy{
+    width: 200px;
+    height: 200px;
+    background: #897A44;
+    clip-path: polygon(60% 15%, 60% 25%, 60% 35%, 70% 35%, 70% 25%, 60% 25%, 60% 0, 80% 0, 80% 15%, 90% 15%, 90% 100%, 
+        10% 100%, 10% 15%, 20% 15%, 20% 0, 40% 0, 40% 15%, 30% 15%, 30% 25%, 30% 35%, 40% 35%, 40% 25%, 30% 25%, 30% 15%);
+}
+
+.salt{
+    width: 200px;
+    height: 300px;
+    background: #9E5E51;
+    clip-path: polygon(70% 20%, 70% 20%, 70% 25%, 70% 35%, 30% 35%, 30% 60%, 60% 60%, 60% 75%, 30% 75%, 30% 85%, 70% 85%, 
+        70% 50%, 40% 50%, 40% 45%, 70% 45%, 70% 25%, 75% 25%, 75% 100%, 25% 100%, 25% 25%, 30% 25%, 30% 20%);
+}
+
+.picture{
+    width: 300px;
+    height: 200px;
+    background: #4C59A2;
+    clip-path: polygon(100% 100%, 0 100%, 60% 100%, 65% 100%, 65% 85%, 70% 85%, 70% 60%, 40% 60%, 40% 85%, 45% 85%, 
+        45% 100%, 50% 100%, 50% 85%, 55% 85%, 55% 100%, 60% 100%, 60% 85%, 55% 85%, 55% 100%, 0 100%, 0 0, 50% 0, 
+        50% 55%, 60% 55%, 60% 45%, 50% 45%, 50% 0, 100% 0);
+}
+
+.hanger{
+    width: 400px;
+    height: 300px;
+    background: #9A4CA2;
+    clip-path: polygon(30% 75%, 10% 95%, 90% 95%, 70% 75%, 70% 70%, 100% 100%, 0 100%, 30% 70%, 50% 70%, 50% 55%,
+        45% 55%, 45% 65%, 40% 65%, 40% 50%, 55% 50%, 55% 70%, 70% 70%, 70% 30%, 70% 75%);
+}
+
+.doorR{
+    width: 20vw;
+    height: 30vh;
+    background: red;
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 78% 0, 75% 61%, 86% 61%, 86% 51%, 74% 51%);
+}
+
+.doorB{
+    width: 20vw;
+    height: 30vh;
+    background: blue;
+    clip-path: polygon(78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 78% 0, 75% 61%, 86% 61%, 86% 51%, 74% 51%);
+}
+
+a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+img{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-vid{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    display: block;
+    font-size: 20vw;
+}
+
+.content{
+    display: block;
+    font-size: 3.5vw;
+    text-align: right;
+    width: 90%;
+}
+
+.arial{
+    font-family: Arial;
+}
+
+.border{
+    border: solid 25px #96EDFF;
+    width: 100%;
+    height: 100%;
+}
+
+.border2{
+    border: solid 25px #FF9696;
+    width: 100%;
+    height: 100%;
+}
+
+.link1{
+    display: none;
+}
+
+.link2{
+    display: none;  
+}
+
+.link3{
+    display: block;
+}
+
+/*
+========================================
+Tablet
+========================================
+*/
+
+
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+
+    .flex{
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .link1{
+        display: block;
+    }
+    .link2{
+        display: none;
+    }
+    .link3{
+        display: none;
+    }
+
+}
+
+/* start of large tablet styles */
+@media screen and (max-width: 991px) and (min-width: 480px){
+
+    .link1{
+        display: none;
+    }
+    .link2{
+        display: block;
+    }
+    .link3{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
