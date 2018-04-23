@@ -140,6 +140,14 @@ body{
     background: #FF9696;
 }
 
+.back4{
+    background: #FFF17C;
+}
+
+.back5{
+    background: #7CFFE1;
+}
+
 clear{
     clear:both;  /* Clears Floats */
 }
@@ -357,7 +365,7 @@ clear{
 
 .mug{
     width: 20vw;
-    height: 40pvh;
+    height: 40vh;
     background: #000;
     clip-path: polygon(0 0, 0 100%, 75% 100%, 75% 85%, 100% 85%, 100% 15%, 95% 15%, 95% 15%, 95% 25%, 
         95% 75%, 80% 75%, 80% 25%, 95% 25%, 95% 15%, 75% 15%, 75% 0);
@@ -372,8 +380,8 @@ clear{
 }
 
 .toilet{
-    width: 400px;
-    height: 400px;
+    width: 20vw;
+    height: 30vh;
     background: #D961FF;
     clip-path: polygon(0 0, 35% 0, 36% 50%, 100% 50%, 80% 78%, 80% 100%, 36% 100%, 36% 77%, 0 50%);
     -webkit-clip-path: polygon(0 0, 35% 0, 36% 50%, 100% 50%, 80% 78%, 80% 100%, 36% 100%, 36% 77%, 0 50%);
@@ -383,8 +391,8 @@ clear{
 }
 
 .toothbrush{
-    width: 800px;
-    height: 150px;
+    width: 50vw;
+    height: 15vh;
     background: #FFAD36;
     clip-path: polygon(5% 40%, 5% 90%, 6% 90%, 6% 40%, 8% 40%, 8% 90%, 9% 90%, 9% 40%, 11% 40%, 11% 90%,
         12% 90%, 12% 40%, 14% 40%, 14% 90%, 100% 90%, 100% 100%, 0 100%, 0 40%, 2% 40%, 2% 90%, 3% 90%, 3% 40%);
@@ -399,8 +407,8 @@ clear{
 }
 
 .toiletPaper{
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 30vh;
     background: #94FF5E;
     clip-path: polygon(50% 0%, 100% 0, 100% 50%, 50% 50%, 50% 30%, 85% 30%, 85% 20%, 70% 20%, 70% 30%, 70% 20%,
         70% 30%, 50% 30%, 50% 100%, 47% 100%, 47% 0);
@@ -416,9 +424,8 @@ clear{
 
 
 .shower{
-    float: left;
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vh;
     background: #68EDF5;
     clip-path: polygon(60% 0, 65% 0, 65% 15%, 65% 0, 65% 15%, 75% 15%, 75% 20%, 50% 20%, 50% 15%, 60% 15%, 60% 5%,
         90% 5%, 90% 70%, 0 70%, 0 100%, 100% 100%, 100% 0, 60% 0, 60% 5%, 65% 5%, 65% 0);
@@ -433,8 +440,8 @@ clear{
 }
 
 .plunger{
-    width: 400px;
-    height: 500px;
+    width: 30vw;
+    height: 40vh;
     background: #F5F368;
     clip-path: polygon(45% 70%, 45% 0, 55% 0, 55% 70%, 70% 70%, 70% 75%, 80% 75%, 80% 100%, 20% 100%, 20% 75%, 30% 75%, 30% 70%);
     -webkit-clip-path: polygon(45% 70%, 45% 0, 55% 0, 55% 70%, 70% 70%, 70% 75%, 80% 75%, 80% 100%, 20% 100%, 20% 75%, 30% 75%, 30% 70%);
@@ -444,8 +451,8 @@ clear{
 }
 
 .bed{
-    width: 200px;
-    height: 200px;
+    width: 20vw;
+    height: 20vh;
     background: #44895A;
     clip-path: polygon(100% 30%, 100% 70%, 100% 100%, 90% 100%, 90% 85%, 10% 85%, 10% 100%, 0 100%, 0% 70%, 90% 70%, 90% 30%);
     -webkit-clip-path: polygon(100% 30%, 100% 70%, 100% 100%, 90% 100%, 90% 85%, 10% 85%, 10% 100%, 0 100%, 0% 70%, 90% 70%, 90% 30%);
@@ -455,8 +462,8 @@ clear{
 }
 
 .teddy{
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 20vh;
     background: #897A44;
     clip-path: polygon(60% 15%, 60% 25%, 60% 35%, 70% 35%, 70% 25%, 60% 25%, 60% 0, 80% 0, 80% 15%, 90% 15%, 90% 100%, 
         10% 100%, 10% 15%, 20% 15%, 20% 0, 40% 0, 40% 15%, 30% 15%, 30% 25%, 30% 35%, 40% 35%, 40% 25%, 30% 25%, 30% 15%);
@@ -471,8 +478,8 @@ clear{
 }
 
 .salt{
-    width: 200px;
-    height: 300px;
+    width: 10vw;
+    height: 30vh;
     background: #9E5E51;
     clip-path: polygon(70% 20%, 70% 20%, 70% 25%, 70% 35%, 30% 35%, 30% 60%, 60% 60%, 60% 75%, 30% 75%, 30% 85%, 70% 85%, 
         70% 50%, 40% 50%, 40% 45%, 70% 45%, 70% 25%, 75% 25%, 75% 100%, 25% 100%, 25% 25%, 30% 25%, 30% 20%);
@@ -487,8 +494,8 @@ clear{
 }
 
 .picture{
-    width: 300px;
-    height: 200px;
+    width: 20vw;
+    height: 20vh;
     background: #4C59A2;
     clip-path: polygon(100% 100%, 0 100%, 60% 100%, 65% 100%, 65% 85%, 70% 85%, 70% 60%, 40% 60%, 40% 85%, 45% 85%, 
         45% 100%, 50% 100%, 50% 85%, 55% 85%, 55% 100%, 60% 100%, 60% 85%, 55% 85%, 55% 100%, 0 100%, 0 0, 50% 0, 
@@ -508,8 +515,8 @@ clear{
 }
 
 .hanger{
-    width: 400px;
-    height: 300px;
+    width: 20vw;
+    height: 30vh;
     background: #9A4CA2;
     clip-path: polygon(30% 75%, 10% 95%, 90% 95%, 70% 75%, 70% 70%, 100% 100%, 0 100%, 30% 70%, 50% 70%, 50% 55%,
         45% 55%, 45% 65%, 40% 65%, 40% 50%, 55% 50%, 55% 70%, 70% 70%, 70% 30%, 70% 75%);
@@ -570,7 +577,7 @@ img{
 
 h1{
     display: block;
-    font-size: 20vw;
+    font-size: 16vw;
     text-decoration: underline;
 }
 
@@ -591,6 +598,11 @@ h1{
     font-family: Arial;
 }
 
+.auto{
+    height: auto;
+    width: auto;
+}
+
 .border{
     border: solid 25px #96EDFF;
     width: 100%;
@@ -599,6 +611,18 @@ h1{
 
 .border2{
     border: solid 25px #96FF9B;
+    width: 100%;
+    height: 100%;
+}
+
+.border3{
+    border: solid 25px #FF78F7;
+    width: 100%;
+    height: 100%;
+}
+
+.border4{
+    border: solid 25px #FF7C7C;
     width: 100%;
     height: 100%;
 }
@@ -623,7 +647,7 @@ Tablet
 
 
 /* start of phone styles */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 600px) {
 
     .flex{
         align-items: center;
@@ -645,7 +669,7 @@ Tablet
 }
 
 /* start of large tablet styles */
-@media screen and (max-width: 2100px) and (min-width: 1501px){
+@media screen and (max-width: 1200px) and (min-width: 601px){
 
     .link1{
         display: none;
