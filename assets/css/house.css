@@ -647,7 +647,7 @@ Tablet
 
 
 /* start of phone styles */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .flex{
         align-items: center;
@@ -669,7 +669,7 @@ Tablet
 }
 
 /* start of large tablet styles */
-@media screen and (max-width: 1200px) and (min-width: 501px){
+@media screen and (max-width: 1200px) and (min-width: 701px){
 
     .link1{
         display: none;
