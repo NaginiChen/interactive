@@ -639,6 +639,12 @@ h1{
     display: block;
 }
 
+ a{
+    line-height: 0; 
+    font-size: 0;
+    color: transparent; 
+ }
+
 /*
 ========================================
 Tablet
